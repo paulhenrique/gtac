@@ -1,0 +1,13 @@
+.ProjectsSection {
+  margin-top: 250px;
+
+.containerProjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 979px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+}

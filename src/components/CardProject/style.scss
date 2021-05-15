@@ -1,0 +1,47 @@
+.projectCard {
+  text-decoration: none;
+  border-radius: 7px;
+  background-color: var(--card-background);
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 34px;
+  color: var(--card-background);
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(20px, 20px)
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: var(--card-color-title);
+    transition: all .25s;
+  }
+
+  p {
+    color: var(--card-color-text);
+    font-size: 1rem;
+  }
+
+  transition: all .25s;
+
+  &:hover {
+    box-shadow: 0 0 0 4px inset var(--primary-color);
+    transform: translateY(-4px);
+
+    h1 {
+      color: var(--primary-color);
+    }
+  }
+}
