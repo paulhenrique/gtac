@@ -1,0 +1,23 @@
+.sectionTitle {
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    border-radius: 7px;
+    background-color: var(--card-background);
+    height: 3px;
+    width: 5%;
+    margin: auto;
+    margin-left: -20px;
+  }
+
+  &:after {
+    width: 14%;
+    transform: translateX(-110px);
+  }
+}
