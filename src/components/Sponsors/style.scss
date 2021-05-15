@@ -1,0 +1,21 @@
+.Sponsors {
+  margin-top: 170px;
+
+  .containerSponsors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    max-width: 870px;
+    margin: auto;
+    margin-top: 85px;
+    gap: 30px;
+
+    img {
+      max-width: 100%;
+    }
+
+
+
+  }
+}

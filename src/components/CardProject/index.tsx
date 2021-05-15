@@ -14,7 +14,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <a href="#" className="projectCard">
+    <a href={project.href} className="projectCard">
       <div >
         <h1>{project.title}</h1>
         <p>{project.description}</p>
