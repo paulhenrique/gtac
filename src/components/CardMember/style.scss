@@ -44,7 +44,14 @@
     }
 
     p {
+      font-size: 1rem;
+      max-width: 222px;
       color: var(--card-color-text);
+
+      a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
     }
 
   }

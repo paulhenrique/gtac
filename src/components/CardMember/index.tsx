@@ -15,17 +15,14 @@ interface CardMemberProps {
 const CardMember: React.FC<CardMemberProps> = ({ member }) => {
   return (
     <div className="cardMember">
-      <a target="_blank" href={member.link}>
-        <div className="containerMemberImage">
-          <img src={member.picture} alt={member.name} />
-        </div>
-      </a>
-      <a target="_blank" href={member.link}>
-        <div className="containerMemberDescription">
-          <h3>{member.name}</h3>
-          <p>{member.description}</p>
-        </div>
-      </a>
+
+      <div className="containerMemberImage">
+        <img src={member.picture} alt={member.name} />
+      </div>
+      <div className="containerMemberDescription">
+        <h3>{member.name}</h3>
+        <p>{member.description}... <a href={member.link} target="_blank">Ver mais</a></p>
+      </div>
     </div>
   )
 }

@@ -6,20 +6,26 @@ import './style.scss';
 const members = [
   {
     name: 'Carlos Santos',
-    description: 'Orientador, Supervisor do ElectrosFI e Pesquisador Responsável',
+    description: 'Doutor em Egenharia Elétrica pela Universidade Estadual de Campinas',
     picture: 'img/photos/carlos.png',
     link: 'aaaa'
   },
   {
-    name: 'Carlos Santos',
-    description: 'Orientador, Supervisor do ElectrosFI e Pesquisador Responsável',
-    picture: 'img/photos/carlos.png',
+    name: 'Danilo C. Bueno',
+    description: 'Mestre em Ciência da Computação pela Universidade Federal de São Carlos',
+    picture: 'img/photos/danilo.png',
     link: 'aaaa'
   },
   {
-    name: 'Carlos Santos',
-    description: 'Orientador, Supervisor do ElectrosFI e Pesquisador Responsável',
-    picture: 'img/photos/carlos.png',
+    name: 'Paulo Henrique',
+    description: 'Graduando em Licenciatura em Física pelo IFSP Campus itapetininga',
+    picture: 'img/photos/paulo.png',
+    link: 'aaaa'
+  },
+  {
+    name: 'Wilton Ferraz',
+    description: 'Doutorando em Engenharia Elétrica pela Universidade Estadual de Campinas',
+    picture: 'img/photos/wilton.png',
     link: 'aaaa'
   }
 ]
