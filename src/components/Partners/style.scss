@@ -1,0 +1,14 @@
+.Partners {
+  margin-top: 100px;
+
+  .containerPartners {
+    max-width: 970px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 43px;
+  }
+}
