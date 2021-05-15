@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <div className="containerFooter">
         <div>
-          Designed By <a href="https://github.com/paulhenrique" target="_blank" rel="noreferrer">@paulhenrique</a>
+          Designed By <br></br><a href="https://github.com/paulhenrique" target="_blank" rel="noreferrer">@paulhenrique</a>
         </div>
         <div>
           <h4>GTAC</h4>

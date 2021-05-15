@@ -10,7 +10,7 @@ function Projects() {
     href: 'project/aaaa'
   }
   return (
-    <div className="ProjectsSection">
+    <div className="ProjectsSection" id="projects">
       <SectionTitle text="Projects" />
       <div className="containerProjects">
         {

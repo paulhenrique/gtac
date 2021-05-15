@@ -16,9 +16,9 @@ function Header() {
         </div>
       </div>
       <div className="containerButton">
-        <button>
+        <a href="#projects">
           <i className="fas fa-arrow-down"></i>
-        </button>
+        </a>
       </div>
     </header>
   )
