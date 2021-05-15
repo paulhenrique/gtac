@@ -8,25 +8,25 @@ const members = [
     name: 'Carlos Santos',
     description: 'Doutor em Egenharia Elétrica pela Universidade Estadual de Campinas',
     picture: 'img/photos/carlos.png',
-    link: 'aaaa'
+    link: 'http://lattes.cnpq.br/2704773293662530'
   },
   {
     name: 'Danilo C. Bueno',
-    description: 'Mestre em Ciência da Computação pela Universidade Federal de São Carlos',
+    description: 'Mestre em Ciência da Computação pela Universidade Federal de Sã',
     picture: 'img/photos/danilo.png',
-    link: 'aaaa'
+    link: 'http://lattes.cnpq.br/0922970312299191'
   },
   {
     name: 'Paulo Henrique',
     description: 'Graduando em Licenciatura em Física pelo IFSP Campus itapetininga',
     picture: 'img/photos/paulo.png',
-    link: 'aaaa'
+    link: 'http://lattes.cnpq.br/1994196517067630'
   },
   {
     name: 'Wilton Ferraz',
-    description: 'Doutorando em Engenharia Elétrica pela Universidade Estadual de Campinas',
+    description: 'Doutorando em Engenharia Elétrica pela Universidade Estadual de Ca',
     picture: 'img/photos/wilton.png',
-    link: 'aaaa'
+    link: 'http://lattes.cnpq.br/4328187599187471'
   }
 ]
 function Support() {

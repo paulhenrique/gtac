@@ -21,7 +21,7 @@ const CardMember: React.FC<CardMemberProps> = ({ member }) => {
       </div>
       <div className="containerMemberDescription">
         <h3>{member.name}</h3>
-        <p>{member.description}... <a href={member.link} target="_blank">Ver mais</a></p>
+        <p>{member.description}... <a href={member.link} target="_blank" rel="noreferrer">Ver mais</a></p>
       </div>
     </div>
   )
