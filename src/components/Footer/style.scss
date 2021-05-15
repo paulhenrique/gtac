@@ -1,0 +1,51 @@
+footer {
+  margin-top: 100px;
+  background: var(--footer-background);
+
+
+  div.containerFooter {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    max-width: 960px;
+    margin: auto;
+    align-items: center;
+
+    a {
+      color: var(--primary-color);
+
+      &.btn-top {
+        background-color: var(--card-background);
+        padding: 1rem;
+        text-align: center;
+        border-radius: 7px;
+        color: var(--body-color);
+        transition: background-color 0.25s;
+
+        &:hover {
+          background-color: var(--primary-color)
+        }
+      }
+    }
+
+    h4 {
+      font-size: 22px;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    text-align: center;
+
+    div:nth-child(1) {
+      text-align: left;
+    }
+
+    div:nth-child(3) {
+      text-align: right;
+    }
+  }
+
+}

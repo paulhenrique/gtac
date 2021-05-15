@@ -4,8 +4,6 @@ import Router from './Router';
 import './assets/style/global.scss';
 
 ReactDOM.render(
-  <div className="container">
-    <Router />
-  </div>,
+  <Router />,
   document.getElementById('root')
 );
