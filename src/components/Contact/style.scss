@@ -1,0 +1,50 @@
+.contactContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 920px;
+  margin: auto;
+  margin-top: 100px;
+
+  .containerMap {
+    border-radius: 7px;
+    max-height: 388px;
+    overflow: hidden;
+  }
+
+  .containerText {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      max-width: 411px;
+      color: var(--secondary-text-body);
+    }
+
+    .containerIcons {
+      display: flex;
+      gap: 20px;
+
+      a {
+        background-color: var(--card-background);
+        padding: 1rem;
+        border-radius: 7px;
+        color: var(--text-body);
+        font-size: 33px;
+        transition: background-color .25s;
+
+        i {
+          margin: 0;
+          padding: 0;
+        }
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
