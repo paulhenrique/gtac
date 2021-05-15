@@ -22,8 +22,8 @@ function Sponsors() {
       <div className="containerSponsors">
         {
           logos.map((e, index) => (
-            <a href="">
-              <img src={e.image} alt={`Imagem ${index}`} key={index} />
+            <a href={e.href} target="_blank" rel="noreferrer" key={index}>
+              <img src={e.image} alt={`Imagem ${index}`} />
             </a>
           ))
         }

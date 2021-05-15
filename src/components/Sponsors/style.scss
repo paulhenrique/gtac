@@ -16,6 +16,12 @@
     }
 
 
+    a {
+      transition: transform .25s;
 
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
   }
 }
