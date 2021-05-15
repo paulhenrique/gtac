@@ -1,49 +1,78 @@
 #header {
+
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  gap: 17px;
+  flex-direction: column;
 
-  .containerImage {
-    background: var(--primary-color);
-    border-radius: 7px;
-    width: 218px;
-    height: 231px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  div.containerButton {
+    text-align: center;
 
-    &:before {
-      content: "";
-      width: 164px;
-      height: 194px;
-      border-radius: 7px;
-      background: var(--card-background);
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      transform: translate(-39px, -24px);
+    button {
+      color: var(--text-body);
+      background: transparent;
+      display: inline-block;
+      border: none;
+      position: relative;
+      top: -30px;
+
+      i {
+        font-size: 27px;
+      }
+
+      transition: transform 0.25s;
+
+      &:hover {
+        transform: translateY(5px);
+      }
     }
   }
 
-  div.containerText {
-    h1 {
+  div.containerWelcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 17px;
 
-      font-style: normal;
-      font-weight: normal;
-      font-size: 5.0625rem;
-      line-height: 101px;
+    .containerImage {
+      background: var(--primary-color);
+      border-radius: 7px;
+      width: 218px;
+      height: 231px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 164px;
+        height: 194px;
+        border-radius: 7px;
+        background: var(--card-background);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: translate(-39px, -24px);
+      }
     }
 
-    p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-      max-width: 231px;
+    div.containerText {
+      h1 {
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5.0625rem;
+        line-height: 101px;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 231px;
+      }
     }
   }
 }
