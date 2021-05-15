@@ -10,5 +10,14 @@
     align-items: center;
     gap: 40px;
     margin-top: 43px;
+
+
+    a {
+      transition: all .3s;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
   }
 }

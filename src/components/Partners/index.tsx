@@ -4,13 +4,13 @@ import './style.scss';
 
 const logos = [
   {
-    title: 'USP', image: 'img/photos/usp.png', href: 'https://fapesp.br'
+    title: 'USP', image: 'img/photos/usp.png', href: 'https://www5.usp.br'
   },
   {
-    title: 'UFSCar', image: 'img/photos/ufscar.png', href: 'https://itp.ifsp.edu.br'
+    title: 'UFSCar', image: 'img/photos/ufscar.png', href: 'https://www2.ufscar.br'
   },
-  { title: 'Unicamp', image: 'img/photos/unicamp.png', href: 'https://itp.ifsp.edu.br/index.php/ensino-tecnico-presencial/manutencao-e-suporte-em-informatica' },
-  { title: 'Unifesp', image: 'img/photos/unifesp.png', href: 'https://itp.ifsp.edu.br/index.php/ensino-tecnico-presencial/manutencao-e-suporte-em-informatica' },
+  { title: 'Unicamp', image: 'img/photos/unicamp.png', href: 'https://www.unicamp.br/unicamp/' },
+  { title: 'Unifesp', image: 'img/photos/unifesp.png', href: 'https://www.unifesp.br' },
 ];
 
 function Partners() {
@@ -20,7 +20,7 @@ function Partners() {
       <div className="containerPartners">
         {
           logos.map((e, index) => (
-            <a href="">
+            <a href={e.href} target="_blank" rel="noreferrer">
               <img src={e.image} alt={`Imagem ${index}`} key={index} />
             </a>
           ))
