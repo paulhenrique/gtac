@@ -8,6 +8,8 @@
   margin: auto;
   margin-top: 100px;
 
+
+
   .containerMap {
     border-radius: 7px;
     max-height: 388px;
@@ -45,6 +47,35 @@
           background-color: var(--primary-color);
         }
       }
+    }
+  }
+
+  @media (max-width: 580px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template: 'a a''b b';
+    gap: 0;
+
+
+    .containerText {
+      text-align: center;
+      margin-bottom: 40px;
+
+      p,
+      h1 {
+        max-width: 100%;
+      }
+
+      .containerIcons {
+        margin: 0 auto;
+        justify-content: center;
+      }
+
+    }
+
+    .containerMap {
+      width: 80%;
+      margin: auto;
+      grid-area: b;
     }
   }
 }

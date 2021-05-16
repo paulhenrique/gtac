@@ -23,5 +23,14 @@
         transform: translateY(-3px);
       }
     }
+
+    @media (max-width: 870px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 580px) {
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+    }
   }
 }

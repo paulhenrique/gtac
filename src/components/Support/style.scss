@@ -8,5 +8,9 @@
     gap: 20px;
     margin: auto;
     margin-top: 92px;
+
+    @media (max-width: 580px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

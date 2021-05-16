@@ -7,6 +7,10 @@
   gap: 20px;
   margin-bottom: 90px;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   a {
     text-decoration: none;
     color: var(--body-color);
