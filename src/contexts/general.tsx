@@ -1,6 +1,6 @@
 import React from 'react'
+import { Member } from '../components/CardMember';
 import { ProjectPropp } from '../components/CardProject';
-
 
 type general = {
   _projects: [];
@@ -17,7 +17,7 @@ interface GeneralPropsData extends GeneralProps {
   projects: ProjectPropp[];
   sponsors: object[];
   university: object[];
-  team: object[];
+  team: Member[];
 }
 
 
@@ -37,16 +37,14 @@ export function GeneralContextProvider({ children }: { children: React.ReactNode
     setTeam(requested._team);
   }
 
-
   React.useEffect(() => {
     async function fetchGTACAPI() {
       try {
         const apiAddress = process.env.REACT_APP_API_ADDRESS ? process.env.REACT_APP_API_ADDRESS : '';
         const response = await fetch(apiAddress);
         const json = await response.json();
-        if (mountedApp) {
-          mountedApp({ _projects: json.projetos, _team: json.team, _sponsors: json.financiers, _university: json.university });
-        }
+        mountedApp({ _projects: json.projetos, _team: json.team, _sponsors: json.financiers, _university: json.university });
+
       } catch (err) {
         console.error(err);
       }
