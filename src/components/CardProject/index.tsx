@@ -2,10 +2,11 @@ import React from 'react'
 import Pen from '../../assets/img/pen.png';
 import './style.scss';
 
-interface ProjectPropp {
+export interface ProjectPropp {
+  id: string;
   title: string;
   description: string;
-  href: string;
+  link: string;
 }
 
 interface ProjectProps {
@@ -14,10 +15,10 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <a href={project.href} className="projectCard">
+    <a href={project.link} target="_blank" rel="noreferrer" className="projectCard">
       <div >
         <h1>{project.title}</h1>
-        <p>{project.description}</p>
+        <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
       </div>
       <img src={Pen} alt="Pen" />
     </a>
