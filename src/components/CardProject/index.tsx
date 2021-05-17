@@ -15,7 +15,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <a href={project.link} target="_blank" rel="noreferrer" className="projectCard">
+    <a data-tip="hello world" href={project.link} target="_blank" rel="noreferrer" className="projectCard">
       <div >
         <h1>{project.title}</h1>
         <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
