@@ -3,8 +3,8 @@ services:
     ifsp-gtac:
       container_name: paulhenrique/ifsp-gtac
       image: paulhenrique/ifsp-gtac
-      build: 
-        context: .
+      # build: 
+      #   context: .
       ports:
         - "5000:5000"
       volumes:
