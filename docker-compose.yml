@@ -1,0 +1,12 @@
+version: "3.7"  # optional since v1.27.0
+services:
+    ifsp-gtac:
+      container_name: paulhenrique/ifsp-gtac
+      image: paulhenrique/ifsp-gtac
+      build: 
+        context: .
+      ports:
+        - "5000:5000"
+      volumes:
+        - "./resources/default.conf.template:/etc/nginx/conf.d/default.conf"
+        - "./resources/nginx.conf:/etc/nginx/nginx.conf" 
